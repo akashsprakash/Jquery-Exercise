@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text area Limiter</title>
+         <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .textarea1
+        {
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row textarea1">
+            <textarea class="form-control" rows="6" id="limiter-area" placeholder="Maximum 100 characters . . ."></textarea>
+        </div>
+    </div>
+    <!-- Script code for setting limit for text box. -->
+    <script>
+        $(document).ready(function(){
+            $("#limiter-area").attr('maxlength','100');
+          /*The .attr attribute has two parameters for function and for chatacter limit*/
+        });
+    </script>
+
+</body>
+</html>
