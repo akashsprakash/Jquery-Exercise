@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <script src="https://code.jquery.com/jquery-git.js"></script>  
+        <meta charset="utf-8">  
+        <meta name="viewport" content="width=device-width">
+        <title>jQuery to remove class</title>  
+        <style>
+             .center{
+         	    text-align: center;
+             }
+             .large{
+             	font-size: 100px;
+             }
+
+        </style> 
+        <script>
+             $(document).ready(function(){
+             	$("#button1").click(function(){
+             		$("#item").removeClass("center large");
+             		// removeClassis used to remove class from an element
+             		// multiple classes are seperated with space
+             	});
+             });
+        </script>
+    </head>  
+    <body>  
+        <p id="item" class="center large">This paragraph refers two classes.</p>  
+        <input type="button" id="button1" value="Click to remove all classes">  
+    </body>  
+</html>
